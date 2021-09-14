@@ -1,0 +1,23 @@
+{% load static %}
+<div class="header-middle">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 clearfix">
+                    <div class="logo pull-left">
+                        <a href="{% url 'home_page' %}"><img src="{% static 'images/home/logotip.png' %}" alt="" /></a>
+                    </div>
+                </div>
+                <div class="col-md-8 clearfix">
+                    <nav>
+                        <ul class ="head-menu">
+                            <li><a href="{% url 'home_page' %}"> Home </a></li>
+                            <li><a href=" {% url 'catalog:catalog_page' %} "> Catalog </a></li>
+                            <li><a href="checkout.html"> Registration </a></li>
+                            <li><a href="cart.html"> Cart </a></li>
+                            <li><a href="login.html"> Login </a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
